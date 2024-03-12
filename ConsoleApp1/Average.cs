@@ -18,7 +18,7 @@ namespace ConsoleApp1
             int sum = 0;
             foreach (int digit in numbers)
             {
-                digit += num;
+                sum += digit;
             }
 
             return (double)sum / numbers.Length;
