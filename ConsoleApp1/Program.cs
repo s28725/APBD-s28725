@@ -11,7 +11,7 @@ namespace ConsoleApp1
         public static void Main()
         {
             int[] numbers = { 1, 2, 3, 4, 5 };
-            double average = MathUtils.CalculateAverage(numbers);
+            double average = MathUtils.FindMaxValue(numbers);
             Console.WriteLine($"The average is: {average}");
 
         }
