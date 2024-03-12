@@ -10,21 +10,9 @@ namespace ConsoleApp1
     {
         public static void Main()
         {
-            int int1;
-            Console.Write("\n\n");
-            Console.Write("Check whether first number bigger than 0:\n");
-            Console.Write("-------------------------------------------");
-            Console.Write("\n\n");
-            Console.Write("Input 1st number: ");
-            int1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Modification 1");
-            Console.Write("Modification 2");
-            Console.Write("Modification 3");
-
-            if (int1 > 0)
-                Console.WriteLine("The number " + int1 + " is bigger than 0");
-            else
-                Console.WriteLine("The number " + int1 + " is less than 0");
+            int[] numbers = { 1, 2, 3, 4, 5 };
+            double average = MathUtils.CalculateAverage(numbers);
+            Console.WriteLine($"The average is: {average}");
 
         }
     }
