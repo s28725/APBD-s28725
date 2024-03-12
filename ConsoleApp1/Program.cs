@@ -18,7 +18,8 @@ namespace ConsoleApp1
             Console.Write("Input 1st number: ");
             int1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Modification 1");
-            Console.Write("Modification 2"); 
+            Console.Write("Modification 2");
+            Console.Write("Modification 3");
 
             if (int1 > 0)
                 Console.WriteLine("The number " + int1 + " is bigger than 0");
