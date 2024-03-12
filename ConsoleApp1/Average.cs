@@ -16,9 +16,15 @@ namespace ConsoleApp1
             }
 
             int sum = 0;
+<<<<<<< HEAD
             foreach (int a in numbers)
             {
                 sum += a;
+=======
+            foreach (int number in numbers)
+            {
+                sum += number;
+>>>>>>> feature-new
             }
 
             return (double)sum / numbers.Length;
