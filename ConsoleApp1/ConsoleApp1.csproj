@@ -43,7 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Average.cs" />
+    <Compile Include="Container.cs" />
+    <Compile Include="ContainerShip.cs" />
+    <Compile Include="DangerousLoadException.cs" />
+    <Compile Include="FerfigeratedContainer.cs" />
+    <Compile Include="GasContainer.cs" />
+    <Compile Include="IHazardNotifier.cs" />
+    <Compile Include="LiquidContainer.cs" />
+    <Compile Include="OverfillException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

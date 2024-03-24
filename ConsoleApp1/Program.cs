@@ -10,10 +10,20 @@ namespace ConsoleApp1
     {
         public static void Main()
         {
-            int[] numbers = { 1, 2, 3, 4, 5 };
-            double average = MathUtils.FindMaxValue(numbers);
-            Console.WriteLine($"The average is: {average}");
+            try
+            {
+                LiquidContainer liquidContainer = new LiquidContainer("KON-L-1", 100, 100, 100, 100, 1000000, true);
+                liquidContainer.LoadCargo(10);
+                Console.WriteLine($"Loaded cargo mass: {liquidContainer.CargoMass}");
 
+                ContainerShip ship = new ContainerShip(100000, 1000000, 1000000);
+                ship.LoadContainer(liquidContainer);
+                Console.WriteLine($"Number of containers on ship: {ship.Containers.Count}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
         }
     }
 }
